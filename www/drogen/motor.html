@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>DROGEN</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+<!-- js -->
+<!--[if lt IE 9]>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!--><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+ $( function() {
+	$('.position').draggable();
+ } );
+</script>
+			
+			
+</head>
+<body>
+<div id="wrap">
+    <header id="hd" class="sub">
+        <div class="con-panel row">
+            <h1><a href="/pf/drogentest/index.html" class="icon-logo">DROGEN</a></h1>
+            <ul class="row">
+                <li><a href="company.html">DROGEN</a></li>
+				<li><a href="drone.html">PRODUCT</a></li>
+				<li><a href="rnd.html">R&amp;D</a></li>
+				<li><a href="ir.html">IR</a></li>
+				<li><a href="notice.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="select-lang">
+                <button type="button" class="icon-flag-ko" data-toggle="modal" data-target="#modalLang">언어선택</button>
+            </div>
+            <!--mobile-->
+            <div class="mobile-nav">
+                <a href="" id="gnb" class="icon-gnb"></a>
+                <div id="gnbNav">
+                    <a href="" id="gnbCls" class="icon-gnb-cls"></a>
+                    <ul>
+                        <li><span></span><a href="company.html">DROGEN</a></li>
+                        <li><span></span><a href="drone.html">PRODUCT</a></li>
+                        <li><span></span><a href="rnd.html">R&amp;D</a></li>
+                        <li><span></span><a href="ir.html">IR</a></li>
+                        <li><span></span><a href="notice.html">NEWS</a></li>
+                        <li><span></span><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <script>
+                    $(function () {
+                        $('#gnb').on('click', function(){
+                            $(this).next().addClass('select');
+                            return false;
+                        });
+                        $('#gnbCls').on('click', function(){
+                            $(this).parent().removeClass('select');
+                            return false;
+                        });
+                    });
+                </script>
+            </div>
+            <!--//mobile-->
+        </div>
+    </header>
+    
+    <div id="contents" class="page-sub v2">
+        <div class="text-center">
+            <ul class="nav nav-pills page-nav">
+                <li role="presentation"><a href="drone.html">DRONE</a></li>
+                <li role="presentation" class="active"><a href="motor.html">MOTOR</a></li>
+                <li role="presentation"><a href="fc.html">FC</a></li>
+            </ul>
+        </div>
+        <section class="first product-motor">
+            <div class="con-panel sub">
+                <h4 class="v2">MOTOR</h4>
+			</div>
+                 <div class="con">
+                    <p class="text-center">드로젠은 국내 유일의 소형 BLDC개발 및 제조사입니다.<br>지금까지의 설계 및 개발 노하우를 이용하여 레이싱 드론 전용 모터와 <br class="hidden-sm hidden-lg">고효율의 하이브리드 모터를 개발하고 있습니다.</p>
+                    
+					 <div id="aboutMotor">
+						<!--div id="motorA" class="frame px_sect">
+							<div class="con-panel sub">
+								<div class="info-box fadeInDown animated ani_delay02">
+									<span class="deco-line red"></span>
+									<p>HEAT<br>DISSIPATION</p>
+								</div>
+								<div class="icon-mp01-motor bounceInDown animated"></div>
+								<div class="icon-mp01-wind1 zoomInUp animated ani_delay10"></div>
+								<div class="icon-mp01-wind2 zoomInUp animated ani_delay05"></div>
+								<div class="icon-mp01-background fadeInRight animated "></div>
+							</div>
+						</div-->
+						<div id="motorB" class="frame px_sect">
+							<div class="con-panel sub">
+								<div id="motorContents" class="text-center">
+									<div class="motor-body">
+										<div class="motor-part">
+											<div class="detailbox i1">
+												<div class="position">
+													<div>
+														<a href="" class="icon-drone-detail" onclick="return false;">자세히보기</a>
+														<div>
+															<span>SHAFT</span>
+															<p>모터의 중심 축으로 부품들을 고정해주는 역할을 합니다.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="detailbox i2">
+												<div class="position">
+													<div>
+														<a href="" class="icon-drone-detail" onclick="return false;">자세히보기</a>
+														<div>
+															<span>MAGNET</span>
+															<p>자기장속에 전류를 흘리면 전자기장 에너지를 운동에너지로 변하게 해줍니다.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="detailbox i3">
+												<div class="position">
+													<div>
+														<a href="" class="icon-drone-detail" onclick="return false;">자세히보기</a>
+														<div class="ballon-left">
+															<span>CAN</span>
+															<p>Magnet이 부착되는 부분이며, 외부의 이물질 유입을 차단합니다.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="detailbox i4">
+												<div class="position">
+													<div>
+														<a href="" class="icon-drone-detail" onclick="return false;">자세히보기</a>
+														<div class="ballon-left">
+															<span>CORE</span>
+															<p>코어에 전선을 감아 각 코어에 전류가 흐를 수 있게 합니다. <br>전자기장 에너지가 Magnet과 접촉 되면서 운동에너지로 변합니다.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<!--mobile -->
+									<div class="m-ballon">
+										<div>
+											<span>SHAFT</span>
+											<p>모터의 중심 축으로 부품들을 고정해주는 역할을 합니다.</p>
+										</div>
+										<div>
+											<span>MAGNET</span>
+											<p>자기장속에 전류를 흘리면 전자기장 에너지를 운동에너지로 변하게 해줍니다.</p>
+										</div>
+										<div>
+											<span>CAN</span>
+											<p>Magnet이 부착되는 부분이며, 외부의 이물질 유입을 차단합니다.</p>
+										</div>
+										<div>
+											<span>CORE</span>
+											<p>코어에 전선을 감아 각 코어에 전류가 흐를 수 있게 합니다.<br> 전자기장 에너지가 Magnet과 접촉되면서 운동에너지로 변합니다.</p>
+										</div>
+									</div>	
+									
+								</div>
+							</div>
+						</div>
+					 </div>
+					 
+					 <!-- 제품안내 -->
+                    <div id="motorProductLst" class="product-lst px_sect">
+						<div class="con-panel sub">
+							<h5>PRODUCT</h5>
+							<div class="row">
+								<div class="col-sm-12 fadeInUp animated">
+									<a href="#"><img src="image/pd-motorL6.png" class="img-responsive center-block"></a>
+									<p>L6 Motor</p>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="btn-wide-red">
+						<a href="mailto:drogen@drogen.co.kr">제품 & 제작 문의<i class="icon-arrow-more"></i></a>
+					</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="ft">
+        <div class="con-panel">
+            <ul class="row">
+                <li>
+                    <p>DROGEN</p>
+                    <ul>
+                        <li><a href="">개요</a></li>
+                        <li><a href="">CEO인사말</a></li>
+                        <li><a href="">회사연혁</a></li>
+                        <li><a href="">사업영역</a></li>
+                        <li><a href="">CI</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>PRODUCT</p>
+                    <ul>
+                        <li><a href="">DRONE</a></li>
+                        <li><a href="">MOTOR</a></li>
+                        <li><a href="">FC</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>R&amp;D</p>
+                    <ul>
+                        <li><a href="">연구분야</a></li>
+                        <li><a href="">보유 기술</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>IR</p>
+                    <ul>
+                        <li><a href="">재무 현황</a></li>
+                        <li><a href="">공시 정보</a></li>
+                        <li><a href="">주가 정보</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>NEWS</p>
+                    <ul>
+                        <li><a href="">회사소식</a></li>
+                        <li><a href="">보도자료</a></li>
+                        <li><a href="">영상자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>CONTACT</p>
+                    <ul>
+                        <li><a href="">드로젠</a></li>
+                        <li><a href="">카페드로젠</a></li>
+                        <li><a href="">드로젠스토어</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="copy">
+                <p>사업자등록번호 : 120-81-88352 <em>|</em> ㈜드로젠</p>
+                <p>대표이사 : 이흥신 <em>|</em> 주소 : 인천 연수구 송도과학로 32 IT Center 23층</p>
+                <p>Copyright(c) DROGEN Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal :: 언어선택 -->
+<div class="modal fade lang" id="modalLang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Select Your Language</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="row">
+            <li><a href="" class="icon-flag-ko">한국어</a></li>
+            <li><a href="" class="icon-flag-en">영어</a></li>
+            <li><a href="" class="icon-flag-cn">중국어</a></li>
+            <li><a href="" class="icon-flag-jp">일본어</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 현재 페이지 js -->
+<script>
+jQuery(function($){ 
+	$(window).on('load resize',function(){
+		 var w = $(window).width();
+		 $('.icon-drone-detail').on('click', function(){
+			 if (w > 768) {
+				$(this).toggleClass('active').next().toggle();
+				if($('.icon-drone-detail').hasClass('active')) {
+					$(this).parents('.detailbox').siblings().children().children().children('a').removeClass('active').next().hide();
+					return false;
+				  };
+			 } else if (w < 768){
+				var clickEleIndex = $('.motor-part>div a');
+				
+				clickEleIndex.click(function() {
+				   var indexNo = $(this).parents('.detailbox').index();
+				   $(this).addClass('active').parents('.detailbox').siblings().children().children().children('a').removeClass('active');
+				   $('.m-ballon>div').eq(indexNo).show().siblings().hide();
+				})
+				return false;
+			 }
+		 });
+	 });
+});
+</script>
+
+<script src="js/common.js"></script>
+</body>
+</html>

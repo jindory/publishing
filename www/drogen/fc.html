@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>DROGEN</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+<!-- js -->
+<!--[if lt IE 9]>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!--><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+
+			
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+ $( function() {
+	$('.dt-box').draggable();
+ } );
+</script>
+			
+
+</head>
+<body>
+<div id="wrap">
+    <header id="hd" class="sub">
+        <div class="con-panel row">
+            <h1><a href="/" class="icon-logo">DROGEN</a></h1>
+            <ul class="row">
+                <li><a href="company.html">DROGEN</a></li>
+				<li><a href="drone.html">PRODUCT</a></li>
+				<li><a href="rnd.html">R&amp;D</a></li>
+				<li><a href="ir.html">IR</a></li>
+				<li><a href="notice.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="select-lang">
+                <button type="button" class="icon-flag-ko" data-toggle="modal" data-target="#modalLang">언어선택</button>
+            </div>
+            <!--mobile-->
+            <div class="mobile-nav">
+                <a href="" id="gnb" class="icon-gnb"></a>
+                <div id="gnbNav">
+                    <a href="" id="gnbCls" class="icon-gnb-cls"></a>
+                    <ul>
+                        <li><span></span><a href="company.html">DROGEN</a></li>
+                        <li><span></span><a href="drone.html">PRODUCT</a></li>
+                        <li><span></span><a href="rnd.html">R&amp;D</a></li>
+                        <li><span></span><a href="ir.html">IR</a></li>
+                        <li><span></span><a href="notice.html">NEWS</a></li>
+                        <li><span></span><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <script>
+                    $(function () {
+                        $('#gnb').on('click', function(){
+                            $(this).next().addClass('select');
+                            return false;
+                        });
+                        $('#gnbCls').on('click', function(){
+                            $(this).parent().removeClass('select');
+                            return false;
+                        });
+                    });
+                </script>
+            </div>
+            <!--//mobile-->
+        </div>
+    </header>
+    
+    <div id="contents" class="page-sub v2">
+        <div class="text-center">
+            <ul class="nav nav-pills page-nav">
+                <li role="presentation"><a href="drone.html">DRONE</a></li>
+                <li role="presentation"><a href="motor.html">MOTOR</a></li>
+                <li role="presentation" class="active"><a href="fc.html">FC</a></li>
+            </ul>
+        </div>
+        <section class="first product-fc">
+            <div class="con-panel sub">
+                <h4 class="v2">FC</h4>
+			</div>
+                <div class="con">
+                    <p class="text-center">FC는 드론 구성품 중 하나로 드론 조종을 원할하게 하는 <br class="hidden-sm hidden-lg">Flight Controller의 약자입니다. <br> 드로젠은 OSD를 내장한 일체형 모델과 진동을 <br class="hidden-sm hidden-lg">최소화한 소형 모델 등 꾸준히 개발 중에 있습니다.</p>
+                    
+					 <div id="aboutFC">
+						<div id="fcA" class="frame px_sect">
+							<div class="con-panel sub">
+								<div id="fcContents" class="text-center">
+									<div class="fc-body">
+										<div class="fc-part">
+											<div class="detailbox i1">
+												<div class="position">
+													<div>
+														<a href="" class="icon-drone-detail" onclick="return false;">자세히보기</a>
+														<div class="dt-box i1">
+															<span>CALIBRATE</span>
+															<p>초반에 여러 센서들의 기본 값과 기체의 중심을 셋팅해 비행시 자세를 측정합니다.</p>
+														</div>
+														<div class="dt-box i2">
+															<span>OSD</span>
+															<p>GPS 좌표나 배터리 전압 등 비행 시 필요한 정보들을 화면에 표시해줍니다. 저전압으로 인한 추락을 방지할 수 있으며, 기체 추락시 GPS 정보로 찾을 수 있습니다.</p>
+														</div>
+														<div class="dt-box i3">
+															<span>GPS</span>
+															<p>위성 좌표를 받아 위치를 확인하는 장치 입니다. GPS 기술을 이용해 무인 택배 등의 서비스를 가능하게 합니다.</p>
+														</div>
+														<div class="dt-box i4 ballon-left">
+															<span>ACCELERATION SENSOR</span>
+															<p>가속도센서는 출력신호를 처리하여 물체의 가속도, 진동, 충격 등의 동적 힘을 측정합니다.</p>
+														</div>
+														<div class="dt-box i5 ballon-left">
+															<span>GYRO SENSOR</span>
+															<p>기본적으로 회전하는 물체의 역학운동을 이용한 개념으로 위치 측정과 방향 설정 등에 활용되는 기술입니다. </p>
+														</div>
+														<div class="dt-box i6 ballon-left">
+															<span>TERRESTRIAL MAGNETISM SENSOR</span>
+															<p>GPS 센서와 지자기 센서의 조합으로 드론 진행 방향을 알 수 있습니다. 이는 Hall Effect 원리를 이용한 것입니다.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<!--mobile -->
+									<div class="m-ballon">
+										<div>
+											<span>CALIBRATE</span>
+											<p>초반에 여러 센서들의 기본 값과 기체의 중심을 셋팅해 비행시 자세를 측정합니다.</p>
+										</div>
+										<div>
+											<span>OSD</span>
+											<p>GPS 좌표나 배터리 전압 등 비행 시 필요한 정보들을 화면에 표시해줍니다. 저전압으로 인한 추락을 방지할 수 있으며, 기체 추락시 GPS 정보로 찾을 수 있습니다.</p>
+										</div>
+										<div>
+											<span>GPS</span>
+											<p>위성 좌표를 받아 위치를 확인하는 장치 입니다. GPS 기술을 이용해 무인 택배 등의 서비스를 가능하게 합니다.</p>
+										</div>
+										<div>
+											<span>ACCELERATION SENSOR</span>
+											<p>가속도센서는 출력신호를 처리하여 물체의 가속도, 진동, 충격 등의 동적 힘을 측정합니다.</p>
+										</div>
+										<div>
+											<span>GYRO SENSOR</span>
+											<p>기본적으로 회전하는 물체의 역학운동을 이용한 개념으로 위치 측정과 방향 설정 등에 활용되는 기술입니다. </p>
+										</div>
+										<div>
+											<span>TERRESTRIAL MAGNETISM SENSOR</span>
+											<p>GPS 센서와 지자기 센서의 조합으로 드론 진행 방향을 알 수 있습니다. 이는 Hall Effect 원리를 이용한 것입니다.</p>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					 </div>
+					 
+					 <!-- 제품안내 -->
+                    <div id="motorProductLst" class="product-lst px_sect">
+						<div class="con-panel sub">
+							<h5>PRODUCT</h5>
+							<div class="row">
+								<div class="col-sm-12 fadeInUp animated">
+									<a href="#"><img src="image/pd-fc.png" class="img-responsive center-block"></a>
+									<p>Pikaia FC</p>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="btn-wide-red">
+						<a href="mailto:drogen@drogen.co.kr">제품 & 제작 문의<i class="icon-arrow-more"></i></a>
+					</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="ft">
+        <div class="con-panel">
+            <ul class="row">
+                <li>
+                    <p>DROGEN</p>
+                    <ul>
+                        <li><a href="">개요</a></li>
+                        <li><a href="">CEO인사말</a></li>
+                        <li><a href="">회사연혁</a></li>
+                        <li><a href="">사업영역</a></li>
+                        <li><a href="">CI</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>PRODUCT</p>
+                    <ul>
+                        <li><a href="">DRONE</a></li>
+                        <li><a href="">MOTOR</a></li>
+                        <li><a href="">FC</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>R&amp;D</p>
+                    <ul>
+                        <li><a href="">연구분야</a></li>
+                        <li><a href="">보유 기술</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>IR</p>
+                    <ul>
+                        <li><a href="">재무 현황</a></li>
+                        <li><a href="">공시 정보</a></li>
+                        <li><a href="">주가 정보</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>NEWS</p>
+                    <ul>
+                        <li><a href="">회사소식</a></li>
+                        <li><a href="">보도자료</a></li>
+                        <li><a href="">영상자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>CONTACT</p>
+                    <ul>
+                        <li><a href="">드로젠</a></li>
+                        <li><a href="">카페드로젠</a></li>
+                        <li><a href="">드로젠스토어</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="copy">
+                <p>사업자등록번호 : 120-81-88352 <em>|</em> ㈜드로젠</p>
+                <p>대표이사 : 이흥신 <em>|</em> 주소 : 인천 연수구 송도과학로 32 IT Center 23층</p>
+                <p>Copyright(c) DROGEN Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal :: 언어선택 -->
+<div class="modal fade lang" id="modalLang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Select Your Language</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="row">
+            <li><a href="" class="icon-flag-ko">한국어</a></li>
+            <li><a href="" class="icon-flag-en">영어</a></li>
+            <li><a href="" class="icon-flag-cn">중국어</a></li>
+            <li><a href="" class="icon-flag-jp">일본어</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 현재 페이지 js -->
+<script>
+jQuery(function($){ 
+	$(window).on('load resize',function(){
+		 var w = $(window).width();
+		 $('.icon-drone-detail').on('click', function(){
+			 if (w > 768) {
+				$(this).toggleClass('active').nextAll().toggle();
+				return false;
+			 } else if (w < 768){
+				 $(this).toggleClass('active');
+				$('.m-ballon>div').toggle();
+				return false;
+			 }
+		 });
+	 });
+});
+</script>
+
+<script src="js/common.js"></script>
+</body>
+</html>

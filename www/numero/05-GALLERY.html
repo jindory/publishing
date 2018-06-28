@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1080">
+<title>NUMERO</title>
+
+<!-- css -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/common.css">
+
+<!-- js -->
+<!--[if lt IE 9]><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<![endif]--><!--[if gte IE 9]><!--><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/html5.js"></script>
+</head>
+
+<body><a class="skip" href="#container">Skip to main content</a>
+
+<!-- wrap.screenID -->
+<div id="wrap" class="sub">
+	<!-- header -->
+	<header id="hd">
+		<h1>NUMERO</h1>
+		<nav id="gnb">
+			<ul>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">SHOP</a></li>
+				<li><a href="#">MOTIVATOR</a></li>
+				<li><a href="#">PRESS</a></li>
+				<li><a href="#">GALLERY</a></li>
+				<li><a href="#">REVIEW</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- //header -->
+
+	<!-- .container -->
+	<div id="container" class="clearfix">
+
+<!-- 페이지 시작-->
+
+<div id="ct">
+	<div class="container page-board">
+		<!-- Essence -->
+		<section>
+			<div class="sect-tit">
+				<h2>NUMERO<br>GALLERY</h2>
+			</div>
+			<div class="grid type-gallery">
+				<div class="grid-item">
+					<div>
+						<img class="img-responsive center-block" src="img/gall_img.png" alt="">
+					</div>
+				</div>
+				<div class="grid-item">
+					<div>
+						<img class="img-responsive center-block" src="img/gall_img2.png" alt="">
+					</div>
+				</div>
+				<div class="grid-item">
+					<div>
+						<img class="img-responsive center-block" src="img/gall_img3.png" alt="">
+					</div>
+				</div>
+				<div class="grid-item">
+					<div>
+						<img class="img-responsive center-block" src="img/gall_img4.png" alt="">
+					</div>
+				</div>
+				<div class="grid-item">
+					<div>
+						<img class="img-responsive center-block" src="img/gall_img5.png" alt="">
+					</div>
+				</div>
+				<div class="grid-item">
+					<div>
+						<img class="img-responsive center-block" src="img/gall_img6.png" alt="">
+					</div>
+				</div>
+			</div>
+			<script>
+				$('.grid').masonry({
+				  // options
+				  itemSelector: '.grid-item',
+				});
+			</script>
+		</section>
+	</div>
+</div>
+
+<!-- //페이지 끝-->
+
+<!-- 모달 -->
+<div id="popAlert" class="gall-view modal fade">
+	<div class="modal-dialog">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-view-cls"></i></button>
+		<div class="modal-content">
+			<div class="img"><img class="img-responsive" src="img/gallery_sample.png" alt=""></div>
+		</div>
+	</div>
+</div>
+<!-- 임시 팝업 -->
+<script>
+	window.onload=function  () {
+		(function($){
+			$("#popAlert").modal();
+		})(jQuery)	
+	}
+</script>
+
+	</div>
+	<!-- /.container -->
+	
+	<!-- sns & lang -->
+	<ul id="slideBar" class="row">
+		<li><a href="#" class="color-pink">instagram</a></li>
+		<li><a href="#" class="color-blue">facebook</a></li>
+		<li class="lang">
+			<!-- 선택된 언어 a 태그에 클래스 add : active -->
+			<a href="#" class="active">Kor</a>
+			<a href="#">Eng</a>
+			<a href="#">Chn</a> 
+		</li>
+	</ul>
+	<!-- // sns -->
+	<!-- Footer -->
+	<div id="ft">
+		<i class="icon-ft-logo">D____Z</i>
+		<p>#Numero designed by Darez</p>
+	</div>
+	<!-- //Footer -->
+</div>
+<!-- //wrap -->
+
+
+<!-- js -->
+<!--[if lt IE 9]>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/ie9.js"></script>
+<![endif]-->
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/masonry-docs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
